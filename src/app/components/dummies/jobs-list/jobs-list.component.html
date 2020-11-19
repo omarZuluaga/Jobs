@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <th scope="col">Título</th>
+        <th scope="col">Asignado</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Estado</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let job of jobs" [ngStyle]="{'background-color':job.id === selectedJob?.id ? '#F0F8FF' : 'white'}">
+            <td>{{job.title}}</td>
+            <td>{{job.assigned_to}}</td>
+            <td>{{job.date}}</td>
+            <td>{{job.status}}</td>
+        </tr>
+    </tbody>
+</table>
