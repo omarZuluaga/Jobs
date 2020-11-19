@@ -2,19 +2,33 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "module": "es2020",
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "paths": {
+      "@Smarts/*" : ["app/components/smarts/*"],
+      "@Dummies/*" : ["app/components/dummies/*"],
+      "@Modules/*" : ["app/modules/*"],
+      "@Utils/*" : ["app/utils/*"],
+      "@services/*" : ["app/services/*"],
+      "@env/*": ["environments/*"],
+      "@Core/*": ["app/core/*"]
+    },
     "lib": [
       "es2018",
       "dom"
     ]
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
   }
 }
