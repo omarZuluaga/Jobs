@@ -1,4 +1,4 @@
-# SistemaGeolocalizacionTareasDeCampo
+# Sistema de geolocalizacion de Tareas de campo
 
 ### ¿Cómo ejecutar la aplicación?
 
